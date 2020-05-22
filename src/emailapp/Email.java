@@ -28,6 +28,7 @@ public class Email {
 		System.out.print("New employee: "+this.firstName+".\nDEPARTMENT CODES: \n1 for Sales\n2 for Development\n3 for Accounting\n0 for none\nEnter departmrnt code:");
 		Scanner scanner = new Scanner(System.in);
 		int depChoice = scanner.nextInt();
+		scanner.close();		
 		if(depChoice == 1) {
 			return "sales";
 		} else if (depChoice == 2) {
